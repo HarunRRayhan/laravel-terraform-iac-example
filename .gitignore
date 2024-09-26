@@ -29,3 +29,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# Ignore IDE files
+.idea
+.code
+
