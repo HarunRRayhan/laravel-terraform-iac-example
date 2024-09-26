@@ -1,6 +1,7 @@
 # Laravel AWS Infrastructure
 
-This project contains Terraform configurations to deploy a scalable and secure Laravel application infrastructure on AWS. It sets up a complete CI/CD pipeline and uses AWS services such as EC2, RDS, S3, CloudFront, and more.
+This project contains Terraform configurations to deploy a scalable and secure Laravel application infrastructure on
+AWS. It sets up a complete CI/CD pipeline and uses AWS services such as EC2, RDS, S3, CloudFront, and more.
 
 ## Features
 
@@ -24,9 +25,9 @@ This project contains Terraform configurations to deploy a scalable and secure L
 ## Usage
 
 1. Clone this repository:
-   ```
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   ```bash
+   git clone https://github.com/HarunRRayhan/laravel-terraform-iac-example.git
+   cd laravel-terraform-iac-example
    ```
 
 2. Copy `env.example.tfvars` to `env.tfvars` and fill in the variables:
@@ -49,7 +50,8 @@ This project contains Terraform configurations to deploy a scalable and secure L
      -backend-config="encrypt=true" \
      -backend-config="dynamodb_table=your-terraform-state-lock-table"
    ```
-   Replace the values with your actual S3 bucket name, desired state file path, region, and DynamoDB table name for state locking.
+   Replace the values with your actual S3 bucket name, desired state file path, region, and DynamoDB table name for
+   state locking.
 
 4. Review the planned changes:
    ```bash
@@ -65,7 +67,7 @@ This project contains Terraform configurations to deploy a scalable and secure L
 
 ## Customization
 
-You can customize various aspects of the infrastructure by modifying the Terraform variables. Refer to the `variables.tf` files in each module for available options.
+You can fork this repository and customize various aspects of the infrastructure by modifying the Terraform variables.
 
 ## Maintenance
 
